@@ -38,23 +38,30 @@ Authentication: JSON Web Tokens (JWT), bcrypt.js
 
 
 ⛓️Setup And Installation
+
+
 In order to run the project on your local machine, the following steps must be followed:
 
 1. Clone the repository
-   ```git clone https://github.com/mangalton/FindItHere
-   cd FindItHere```
+   
+         git clone https://github.com/mangalton/FindItHere
+         cd FindItHere 
 
-2. Backend Setup
+3. Backend Setup
 
    
    Each of the three microservices needs to be configured and run separately.
    For every microservice:
 
    
-   A. Create and Configure a ```.env``` file:
-       a ```.env``` file must be created for each of the three service directories.
+   A. Create and Configure a ```.env ``` file:
+
+   
+   a ```.env``` file must be created for each of the three service directories.
          It must contain the following, replace the placeholders with your credentials:
-   ```#MongoDB Connection
+   
+   ```
+   #MongoDB Connection
    MONGO_URI = <your_mongodb_url>
 
    #JWT Configuration
@@ -71,17 +78,24 @@ In order to run the project on your local machine, the following steps must be f
    #Email Configuration
    EMAIL_HOST = smtp.gmail.com
    EMAIL_USER = <your_email>
-   EMAIL_PASS = <16_character_gmail_app_password>```
+   EMAIL_PASS = <16_character_gmail_app_password>
 
 B. Install Dependencies:
-    After navigating into each service's directory , run:
-    ```npm install```
+
+   After navigating into each service's directory , run:
+
+   
+    npm install
 
 C. Run the services:
-    On three different terminal windows, go to each directories and run the server.
-    ```Terminal 1(Auth Service)
+
+
+   On three different terminal windows, go to each directories and run the server.
+    
+    
+    Terminal 1(Auth Service)
     cd backend/auth-service
-    node index.js```
+    node index.js
 
     Terminal 2(Item Service)
     cd backend/iterm-service
@@ -89,14 +103,16 @@ C. Run the services:
 
     Terminal 3(Search Service)
     cd backend/search-service
-    node index.js```
+    node index.js
 
 3. Frontend Setup:
    
    A. Install Dependecies:
-       ```cd findithere-app
-       npm install```
+   
+       cd findithere-app
+       npm install
    
    B. Run the development server:
-       ```npm run dev```
+
+       npm run dev
    
