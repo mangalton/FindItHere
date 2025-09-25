@@ -1,9 +1,9 @@
-#FindItHere - Campus Lost and Found
+# FindItHere - Campus Lost and Found
 
-##🚀Introduction
+## 🚀Introduction
 FindItHere is designed to be a hub for lost and found items in a college campus, which is built with a secure microservice architecture. The platform ensures only verified students can participate.
 
-##Core Features:
+## Core Features:
 **-> User Authentication:**
 1. College-Only Registration: Only users with valid college email domain can sign up.
 2. OTP Email Verification: User authenticity is ensured by sending a One Time Password to the user's email for verification.
@@ -16,19 +16,26 @@ FindItHere is designed to be a hub for lost and found items in a college campus,
 
 **-> Search Management:** Allows users to search for items through keywords or filtering by category and item type.
 
-🛠️Tech Stack & Architecture
+## 🛠️Tech Stack & Architecture
 The backend is built using a Microservice Architecture, each functionality is independent and self-contained services. The three services are :
 1. Authentication Service: User Registration, OTP Verification, login and JWT Generation.
 2. Item Management Service: Create items found or lost, including image uploads.
 3. Search & Filter Service: Dedicated endpoints for search and filtering logic.
 
-Technologies Used:
+## Technologies Used:
+
 Frontend: React.js (with Vite), Tailwind CSS, Axios
+
 Backend: Node.js, Express.js
+
 Database: MongoDB (with Mongoose)
+
 Image Storage: Cloudinary
+
 Email Service: Nodemailer
+
 Authentication: JSON Web Tokens (JWT), bcrypt.js
+
 
 ⛓️Setup And Installation
 In order to run the project on your local machine, the following steps must be followed:
@@ -38,8 +45,12 @@ In order to run the project on your local machine, the following steps must be f
    cd FindItHere```
 
 2. Backend Setup
+
+   
    Each of the three microservices needs to be configured and run separately.
    For every microservice:
+
+   
    A. Create and Configure a ```.env``` file:
        a ```.env``` file must be created for each of the three service directories.
          It must contain the following, replace the placeholders with your credentials:
@@ -70,7 +81,7 @@ C. Run the services:
     On three different terminal windows, go to each directories and run the server.
     ```Terminal 1(Auth Service)
     cd backend/auth-service
-    node index.js
+    node index.js```
 
     Terminal 2(Item Service)
     cd backend/iterm-service
@@ -81,9 +92,11 @@ C. Run the services:
     node index.js```
 
 3. Frontend Setup:
+   
    A. Install Dependecies:
        ```cd findithere-app
        npm install```
+   
    B. Run the development server:
        ```npm run dev```
    
